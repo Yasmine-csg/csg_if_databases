@@ -5,8 +5,7 @@ include('opdracht_begin.php');
 TYP HIERONDER JOUW PHPCODE
 ****************************/
 
-$leerling=array('nr' => 123456, 'voornaam' => 'Alan', 'achternaam' => 'Turing');
-
+$leerling=array('nr' => 150125, 'voornaam' => 'Yasmine', 'achternaam' => 'Ibrahim' , 'geboortejaar' => '2003');
 echo "<pre>Leerling:";
 print_r($leerling);
 echo "</pre>";
