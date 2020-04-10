@@ -12,14 +12,18 @@ $speelveld=array(
                   array('O','X','O')
                 );
 $winnaar='Niemand';
-
+$richting;
 for ($n=0;$n<3;$n++) {
-  if ($speelveld[$n][0]==$speelveld[$n][1] && $speelveld[$n][1]==$speelveld[$n][2]) {
+  if ($speelveld[0][$n]==$speelveld[1][$n] && $speelveld[1][$n]==$speelveld[2][$n]) {
     $winnaar=$speelveld[$n][0];
+    $richting = "verticale";
+  }
+  elseif ($speelveld[$n][0]==$speelveld[$n][1] && $speelveld[$n][1]==$speelveld[$n][2]) {
+    $winnaar=$speelveld[$n][0];
+    $richting = "horizontale";
   }
 }
-
-echo "<h1>".$winnaar." heeft gewonnen.</h1>";
+echo "<h1>".$winnaar." heeft gewonnen in $richting richting.</h1>";
 
 // Maak een HTML-tabel met opmaak
 echo '<table style="border-collapse: collapse; width: 450px; background: white; text-align: center; font-size: 3em;">';

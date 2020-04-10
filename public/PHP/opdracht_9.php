@@ -11,19 +11,35 @@ for ($o=1; $o<=6; $o++) {
 
 function dobbelsteen() {
   $worp=1+rand(0,5);
-  echo $worp." | ";
+  //echo $worp." | ";
   return $worp;
 }
 
-for ($n=0; $n<20; $n++) {
+for ($n=0; $n<100; $n++) {
   $frequentie[dobbelsteen()]++;  
 }
 
+function bereken_hoogte($arr) {
+    $m = max($arr);
+    $verhouding = 200/$m;
+    echo $verhouding;
+    for ($i=0; $i<6; $i++) {
+        $hoogte[$i]= $arr[$i] * verhouding;
+    }
+    return $hoogte;
+}
+
+print_r  (  $frequentie);
+$hgt = bereken_hoogte($frequentie);
+print_r($hgt);
+
 echo '<h2>Staafdiagram frequentie</h2>';
 for ($o=1; $o<=6; $o++) {
-  $hoogte=$frequentie[$o]*50;
+  //$hoogte=$(frequentie)[$o]*50;
+  $hoogte=$hgt[$o];
   echo '<img src="images/FF4D00-0.8.png" style="width: 100px; height: '.$hoogte.'px; margin-left: 5px;">';  
 }
+
 
 /****************************
 EINDE VAN JOUW PHPCODE
