@@ -3,6 +3,7 @@ $titel=str_replace("_"," ",substr(__FILE__,strpos(__FILE__,"opdracht"),-4));
 include('opdracht_begin.php');
 require('database.php');
 
+
 $database = "weerstations";
 $DBverbinding = mysqli_connect($servernaam, $gebruikersnaam, $wachtwoord, $database);
 
