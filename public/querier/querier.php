@@ -13,7 +13,7 @@ $PWD = 'password';
 global $BASE_DATABASES;
 $BASE_DATABASES = [
     ['name' => 'Postcode', 'host' => $servername, 'user' => $username, 'pwd' => $PWD, 'db' => 'postcode'],
-   // ['name' => 'Project', 'host' => $servername, 'user' => $username, 'pwd' => $PWD, 'db' => 'project'],
+   ['name' => 'Project', 'host' => $servername, 'user' => $username, 'pwd' => $PWD, 'db' => 'project'],
     ['name' => 'Top-2000 v1', 'host' => $servername, 'user' => $username, 'pwd' => $PWD, 'db' => 'top_2000_v1'],
     ['name' => 'Top-2000 v2', 'host' => $servername, 'user' => $username, 'pwd' => $PWD, 'db' => 'top_2000_v2'],
     ['name' => 'Weerstations', 'host' => $servername, 'user' => $username, 'pwd' => $PWD, 'db' => 'weerstations'],
