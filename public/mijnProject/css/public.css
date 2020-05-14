@@ -3,14 +3,16 @@
 
 /* Overrulen van standaard-bootstrapinstellingen; je kunt hier ook eigen variabelen maken */
 :root {
-    --primary:#007bff;
-    --secondary:#6c757d;
+    --primary:#6b98c9;
+    --secondary:#9dbfdd;
     --success:#28a745;
     --info:#17a2b8;
     --warning:#ffc107;
     --danger:#dc3545;
     --light:#f8f9fa;
-    --dark:#343a40;
+    --dark:#1b64ad;
+    --middle: #b3d7ff; 
+    --grey: #c9c9c9;
 
     --roze: #c41e80;
 }
@@ -41,20 +43,20 @@ header, section, footer, aside, nav, main, article, figure {
 body {
     margin-left: 5%;
     margin-right: 5%;
-    background-color: var(--dark);
+    background-color: #2d5986;
 }
 
 .footer-copyright {
-    background-color: var(--roze);
+    background-color: var(--primary);
 }
 
 h1 {
     font-family: 'Indie Flower', sans;
-    color: var(--roze);
+    color: var(--light);
 }
 
 h3 {
-    color: var(--roze);
+    color: var(--light);
 }
 
 h4 {
@@ -74,6 +76,14 @@ input {
     line-height: 0.2;
 }
 
+.jumbotron {
+    background-color: #557ca3;
+}
+
 .alert {
     text-align: right;
+}
+
+.bg-lightgrey {
+    background-color: #bbcada;
 }

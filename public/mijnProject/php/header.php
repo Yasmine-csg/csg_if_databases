@@ -25,7 +25,7 @@ else {
         <meta name="author" content="VNR@csg">
         <link rel="stylesheet" href="css/bootstrap441.min.css">
         <link rel="stylesheet" type="text/css" href="css/<?= $css?>">
-        <title>Foto Bloch - <?= $paginaTitel?></title>
+        <title>WorldWide - <?= $paginaTitel?></title>
     </head>
 <body>
 
@@ -62,8 +62,8 @@ else {
 
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-4">FOTO BLOCH</h1>
-                <h2 class="display-3">De wereld, mijn wereld.</h2>
+                <h1 class="display-4">WORLDWIDE </h1>
+                <h2 class="display-3">De wereld</h2>
             </div>
         </div>
     </header>
