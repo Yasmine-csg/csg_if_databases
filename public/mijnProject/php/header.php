@@ -33,9 +33,9 @@ else {
 <?php
     require('melding.php');
 ?>    
-        <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="row flex-nowrap justify-content-between align-items-center bg-lightgrey">
             <div class="col-8 pt-1 text-center">
-                <nav class="navbar navbar-expand-sm bg-white navbar-light">
+                <nav class="navbar navbar-expand-sm bg-hello navbar-light">
                     <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="Logo" style="width:40px;">
                     </a>
@@ -63,7 +63,7 @@ else {
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <h1 class="display-4">WORLDWIDE </h1>
-                <h2 class="display-3">De wereld</h2>
+                <h2 class="display-3">Wereldfoto's voor iedereen</h2>
             </div>
         </div>
     </header>

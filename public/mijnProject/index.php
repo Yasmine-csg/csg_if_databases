@@ -42,7 +42,7 @@ if (mysqli_num_rows($records) > 0) {
             <div class="col-md-8 align-items-center">
                 <img src="images/<?= $fotoNummer?>.jpg" class="img-fluid">             
             </div>
-            <section class="col-md-4 p-5 align-items-center bg-dark">
+            <section class="col-md-4 p-5 align-items-center bg-lightgrey">
                 <h1 class="display-4"><?= utf8_decode($fotoData['titel']).' ('.$fotoData['id'].'/'.$aantalFotos.')'?></h1>
                 <h6><?= utf8_decode($fotoData['subtitel'])?></h6>
                 <p><?= utf8_decode($fotoData['omschrijving'])?></p>
@@ -59,6 +59,7 @@ if ($volgende > $aantalFotos) {
 echo '<a href="?nr='.$vorige.'"><button type="submit" class="btn btn-light mb-2">&#8592;</button></a>';
 echo " <strong>$fotoNummer</strong> ";
 echo '<a href="?nr='.$volgende.'"><button type="submit" class="btn btn-light mb-2">&#8594;</button></a>';
+echo '<a href="?nr='.$volgende.'"><button type="submit" class="btn btn-default">Reactie toevoegen</button></a>';
 ?>
 
 <?php

@@ -13,6 +13,8 @@
     --dark:#0059b3;
     --middle: #b3d7ff; 
     --grey: #c9c9c9;
+    --hello:   #bbcada;
+
 
     --roze: #c41e80;
 }
@@ -64,7 +66,7 @@ h4 {
 }
 
 h6 {
-    font-family: 'Indie Flower', serif;
+    font-family: 'Indie Flower', sans;
     color: var(--light);
 }
 
