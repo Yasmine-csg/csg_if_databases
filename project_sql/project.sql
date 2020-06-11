@@ -37,7 +37,7 @@ CREATE TABLE `accounts` (
 
 LOCK TABLES `accounts` WRITE;
 /*!40000 ALTER TABLE `accounts` DISABLE KEYS */;
-INSERT INTO `accounts` VALUES (1,'Karin ','vnr@csg.nl','70b77b7546d42e83139316ec07d048672f5c4aa41a1fec329de6c18e6ef53e3cf7ad124af18aec0b55a25adeb1051f47e8899921cfd9af560e8dafeb0939abcf'),(2,'Sam','plp@csg.nl','70b77b7546d42e83139316ec07d048672f5c4aa41a1fec329de6c18e6ef53e3cf7ad124af18aec0b55a25adeb1051f47e8899921cfd9af560e8dafeb0939abcf'),(3,'Sara','osi@csg.nl','70b77b7546d42e83139316ec07d048672f5c4aa41a1fec329de6c18e6ef53e3cf7ad124af18aec0b55a25adeb1051f47e8899921cfd9af560e8dafeb0939abcf'),(4,'Jan','vnv@csg.nl','70b77b7546d42e83139316ec07d048672f5c4aa41a1fec329de6c18e6ef53e3cf7ad124af18aec0b55a25adeb1051f47e8899921cfd9af560e8dafeb0939abcf');
+INSERT INTO `accounts` VALUES (1,'Karin ','karin@gmail.nl','70b77b7546d42e83139316ec07d048672f5c4aa41a1fec329de6c18e6ef53e3cf7ad124af18aec0b55a25adeb1051f47e8899921cfd9af560e8dafeb0939abcf'),(2,'Sam','sam@gmail.nl','70b77b7546d42e83139316ec07d048672f5c4aa41a1fec329de6c18e6ef53e3cf7ad124af18aec0b55a25adeb1051f47e8899921cfd9af560e8dafeb0939abcf'),(3,'Sara','sara@gmail.nl','70b77b7546d42e83139316ec07d048672f5c4aa41a1fec329de6c18e6ef53e3cf7ad124af18aec0b55a25adeb1051f47e8899921cfd9af560e8dafeb0939abcf'),(4,'Jan','jan@gmail.nl','70b77b7546d42e83139316ec07d048672f5c4aa41a1fec329de6c18e6ef53e3cf7ad124af18aec0b55a25adeb1051f47e8899921cfd9af560e8dafeb0939abcf');
 /*!40000 ALTER TABLE `accounts` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -80,7 +80,7 @@ CREATE TABLE `reacties` (
   `account` int(4) NOT NULL,
   `reactie` varchar(512) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -89,7 +89,7 @@ CREATE TABLE `reacties` (
 
 LOCK TABLES `reacties` WRITE;
 /*!40000 ALTER TABLE `reacties` DISABLE KEYS */;
-INSERT INTO `reacties` VALUES (1,1,1,'De Kathedraal is zoals in veel Spaanse steden indrukwekkend. In de avond is de kathedraal verlicht, wat er ook prachtig uitzag. Zeker de moeite waard om eens te bezoeken! '),(2,1,3,'Zeer mooie bezienswaardigheid. De moeite waard om eens te bezoeken als je in Malaga bent. Natuurlijk moet je wel van architectuur houden. Ook kan het erg druk zijn, het beste is om op zondag na de dienst te gaan. '),(3,1,4,'Mooi gebouw maar niet fantastisch. Op zondag moet je geen entree betalen. Een tip is dus om op zondag te gaan. '),(4,2,2,'Prachtige waterval waar je rondom kan wandelen en kan eten! Zeker de moeite om eens te bezoeken. '),(5,2,1,'Mooie waterval. Mogelijk om tot bovenaan te rijden. Er is een restaurant boven voor een pitstop. Het lijkt me wel erg zwaar om helemaal vanaf beneden te starten met lopen. '),(6,3,3,'De vaart ernaar is leuker dan het zien van dit wrak. Alleen maar boten vol toeristen en een wrak wat helemaal vol is met allemaal touristen. Het is erg mooi om te zien, maar heel touristisch.'),(7,3,4,'Een heel mooi strand, met prachtig helder blauw water. Aanrader om een boottocht te maken hier.'),(8,3,1,'Dank je: vind dit zelf ook best goed gelukt, hoewel de foto relatief donker geworden is.'),(9,4,2,'Leuk park, maar vermijdt het park tijdens het weekend of schoolvakanties in Frankrijk! Je betaald immers veel geld om gemiddeld 1 tot 1u30 per attractie aan te schuiven. Ook het eten is duur en meestal is het dan nog fastfood. Bovendien is logeren in een hotel van Disney duur. Het is beter om een hotel te boeken buiten het park. Als je tijdens een rustigere periode gaat, is het denk ik een hele leuke ervaring.'),(10,1,2,'BLA'),(11,1,2,'BLA'),(12,1,1,'BLA2'),(13,1,1,'BLA2'),(14,1,1,'scdscs'),(15,1,1,'sdfdcds'),(16,2,1,'sdfdsfcd'),(17,1,2,'wwdwdas'),(18,2,2,'qewqw'),(19,3,2,'qwewqq'),(20,3,2,'qwewqq'),(21,1,1,'ygygyguygyug');
+INSERT INTO `reacties` VALUES (1,1,1,'De Kathedraal is zoals in veel Spaanse steden indrukwekkend. In de avond is de kathedraal verlicht, wat er ook prachtig uitzag. Zeker de moeite waard om eens te bezoeken! '),(2,1,3,'Zeer mooie bezienswaardigheid. De moeite waard om eens te bezoeken als je in Malaga bent. Natuurlijk moet je wel van architectuur houden. Ook kan het erg druk zijn, het beste is om op zondag na de dienst te gaan. '),(3,1,4,'Mooi gebouw maar niet fantastisch. Op zondag moet je geen entree betalen. Een tip is dus om op zondag te gaan. '),(4,2,2,'Prachtige waterval waar je rondom kan wandelen en kan eten! Zeker de moeite om eens te bezoeken. '),(5,2,1,'Mooie waterval. Mogelijk om tot bovenaan te rijden. Er is een restaurant boven voor een pitstop. Het lijkt me wel erg zwaar om helemaal vanaf beneden te starten met lopen. '),(6,3,3,'De vaart ernaar is leuker dan het zien van dit wrak. Alleen maar boten vol toeristen en een wrak wat helemaal vol is met allemaal touristen. Het is erg mooi om te zien, maar heel touristisch.'),(7,3,4,'Een heel mooi strand, met prachtig helder blauw water. Aanrader om een boottocht te maken hier.'),(8,3,1,'Dank je: vind dit zelf ook best goed gelukt, hoewel de foto relatief donker geworden is.'),(9,4,2,'Leuk park, maar vermijdt het park tijdens het weekend of schoolvakanties in Frankrijk! Je betaald immers veel geld om gemiddeld 1 tot 1u30 per attractie aan te schuiven. Ook het eten is duur en meestal is het dan nog fastfood. Bovendien is logeren in een hotel van Disney duur. Het is beter om een hotel te boeken buiten het park. Als je tijdens een rustigere periode gaat, is het denk ik een hele leuke ervaring.');
 /*!40000 ALTER TABLE `reacties` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -102,4 +102,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-06-11 11:32:07
+-- Dump completed on 2020-06-11 18:57:46
