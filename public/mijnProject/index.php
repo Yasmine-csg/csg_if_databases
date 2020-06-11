@@ -6,12 +6,14 @@ require('php/header.php');
 $sql = "SELECT * FROM fotos";      
 $records = mysqli_query($DBverbinding, $sql);
 $aantalFotos = mysqli_num_rows($records);
+
 if (isset($_GET["nr"]) && $_GET["nr"] <= $aantalFotos && $_GET["nr"] > 0) {
     $fotoNummer = $_GET["nr"];
 }
 else {
     $fotoNummer = 1;
 }
+
 
 $sql = "SELECT * FROM fotos WHERE id = $fotoNummer";
 $record = mysqli_query($DBverbinding, $sql);
@@ -59,8 +61,19 @@ if ($volgende > $aantalFotos) {
 echo '<a href="?nr='.$vorige.'"><button type="submit" class="btn btn-light mb-2">&#8592;</button></a>';
 echo " <strong>$fotoNummer</strong> ";
 echo '<a href="?nr='.$volgende.'"><button type="submit" class="btn btn-light mb-2">&#8594;</button></a>';
-echo '<a href="?nr='.$volgende.'"><button type="submit" class="btn btn-default">Reactie toevoegen</button></a>';
+$_SESSION["fotoNummer"] = "$fotoNummer";
 ?>
+
+<?php if ($_SESSION["user"]) { ?>
+    <div class="container">
+        <label for="comment">Reacties toevoegen:</label>
+        <form action="php/Reacties.php" method="post">
+            <textarea name="reactie" rows="4" cols="40"></textarea>
+            <input type="submit">
+        </form> 
+    </div>
+    <br>
+<?php } ?>
 
 <?php
 if ($reacties == []) {

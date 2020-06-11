@@ -9,14 +9,14 @@ if (isset($_POST['mail'])) {
     $records = mysqli_query($DBverbinding, $sql);
     if (mysqli_num_rows($records) == 1) {
         $_SESSION["user"] = "$mail";
-        $_SESSION["melding"] = "U bent ingelogd met {$_SESSION["user"]}.";
-        $_SESSION["alert"] = 1; // positieve alert
-        header("Location: ../private.php");
+        $_SESSION["melding"] = "U bent ingelogd met {$_SESSION["user"]} .";
+        $_SESSION["alert"] = 1; 
+        
     }
     else {
         $_SESSION["melding"] = "Het is niet gelukt om in te loggen. Probeer het opnieuw.";
-        $_SESSION["alert"] = 0; // negatieve alert; kun je ook weglaten (als het niet 1 is dan...)
-        header("Location: ../index.php");
+        $_SESSION["alert"] = 0; 
     }
+    header("Location: ../index.php");
 }
 ?>
