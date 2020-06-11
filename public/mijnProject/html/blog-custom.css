@@ -1,7 +1,6 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700|Roboto:400,700');
 
-/* Overrulen van standaard-bootstrapinstellingen; je kunt hier ook eigen variabelen maken */
 :root {
     --primary:#007bff;
     --secondary:#6c757d;
@@ -17,6 +16,6 @@
 
 h1 {
     font-family: 'Raleway', sans; 
-    font-size: 32px;
+    font-size: 40px;
     color: var(--vnr);
 }

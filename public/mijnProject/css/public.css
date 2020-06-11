@@ -1,7 +1,7 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700|Roboto:400,700|Indie+Flower');
 
-/* Overrulen van standaard-bootstrapinstellingen; je kunt hier ook eigen variabelen maken */
+
 :root {
     --primary:#6b98c9;
     --secondary:#9dbfdd;
@@ -26,20 +26,9 @@ body {
     margin: 0;
 }
 
-/*
-    overzicht van nieuwe semantische html5-elementen
-    semantisch wil zeggen dat de naam iets zegt over de content (i.t.t. b.v. div)
-    oude browsers nemen display: block niet standaard over
-    volledige lijst @ https://www.w3schools.com/html/html5_new_elements.asp
-*/
-
 header, section, footer, aside, nav, main, article, figure {
     display: block;
 }
-
-/*
-    en nu na de standaard-aanpassingen de rest van de css
-*/
 
 body {
     margin-left: 5%;
@@ -88,3 +77,4 @@ input {
 .bg-lightgrey {
     background-color: #bbcada;
 }
+

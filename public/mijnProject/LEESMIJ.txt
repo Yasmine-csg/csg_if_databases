@@ -1,2 +1,24 @@
-jendjewdjnejdnewdew
-ewfewfre
+OVER MIJN SITE:
+Dit is de site "Worldwide". Ik heb deze site gemaakt, omdat ik het zelf heel leuk vind om te reizen en merk dat dit soort 
+sites heel handig zijn om te bekijken om inspiratie op te doen en te kijken wat anderen vinden van een plek! 
+Er worden 4 foto's getoond met daarbij al een aantal reacties die al geplaatst zijn, maar er is ook de mogelijkheid om zelf een reactie te plaatsen!
+Dit kan alleen als de bezoeker een account heeft.
+
+PRAKTISCHE INFORMATIE:
+Er zijn 4 accounts aangemaakt waarmee kan worden ingelogd. Bij alle accounts is het wachtwoord om in te loggen "hallo". 
+De accounts om in te loggen zijn: karin@gmail.nl, sam@gmail.nl, sara@gmail.nl, jan@gmail.nl. 
+
+REFLECTIE:
+Ik vond dit zelf best een leuk project om aan te werken. Ik vond het creatieve deel van dit project wel echt het leukste. 
+Het ontwerpen van de website en lettertypes kiezen en kleuren. Mijn broer heeft zelf ook informatica gehad dus ik heb samen met hem 
+gewerkt aan de reacties en de knop maken om reacties te kunnen plaatsen. Ik heb heel veel geleerd tijdens het maken van dit project en 
+ik heb ook het idee dat ik databases nu beter begrijp. Ik vond het nu wel een stuk anders om hele tijd thuis bezig te gaan met zo'n project 
+terwijl je op school makkelijker even een vraag kon stellen. Wel vond ik dat we door de lessen genoeg vragen konden stellen als we vast 
+zaten en ook via de mail kreeg ik vaak heel snel al antwoord. Dus voor mij heeft corona dit project niet heel erg in de weg gezeten. 
+
+DYNAMISCHE KENMERKEN WEBSITE: 
+het REACTIE invoer veld komt alleen tevoorschijn als je bent ingelogd. 
+Dat doe ik door de superglobal $_SESSION te checken.
+Als er op verzenden wordt gedrukt, wordt script php/Reacties.php aangeroepen.
+In script Reacties,php test ik of er een reactie gevuld is (via $_REQUEST).
+En in combinatie met een andere variabel $_SESSION weet ik ook onder welke foto en user de reactie opgeslagen moet worden in tabel reacties met een sql insert commando.

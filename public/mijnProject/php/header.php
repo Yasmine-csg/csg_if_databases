@@ -14,7 +14,7 @@ else {
     header("Location: index.php");
     }
 }
-// require('loginFormulier.php'); Deze wordt nu pas na een stukje html aangeroepen
+// require('loginFormulier.php'); 
 ?>
 
 <!doctype html>
@@ -63,7 +63,7 @@ else {
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <h1 class="display-4">WORLDWIDE </h1>
-                <h2 class="display-3">Wereldfoto's voor iedereen</h2>
+                <p class="display-4 "> “Reizen maakt je eerst sprakeloos en verandert je daarna in een verhalenverteller.” – Ibn Battut</p>
             </div>
         </div>
     </header>
